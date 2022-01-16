@@ -24,6 +24,7 @@ public class GameService {
         game.setCellToObjectMap(new HashMap<>());
         game.setObjectToCellMap(new HashMap<>());
         createWalls(game);
+        game.setCellToShellMap(new HashMap<>());
         return game;
     }
 

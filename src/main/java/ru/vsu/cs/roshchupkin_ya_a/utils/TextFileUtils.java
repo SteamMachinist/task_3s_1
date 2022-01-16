@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class TextFileUtils {
-    private static final File defaultFile = new File("src/main/resources/gameField.txt");
+    private static final File defaultFile = new File("src/main/resources/gamefields/gameField.txt");
 
     public static String read() throws FileNotFoundException {
         Scanner sc = new Scanner(defaultFile);

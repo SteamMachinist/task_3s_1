@@ -2,6 +2,7 @@ package ru.vsu.cs.roshchupkin_ya_a;
 
 import ru.vsu.cs.roshchupkin_ya_a.model.Game;
 import ru.vsu.cs.roshchupkin_ya_a.model.Player;
+import ru.vsu.cs.roshchupkin_ya_a.service.GameConverter;
 import ru.vsu.cs.roshchupkin_ya_a.service.GameService;
 import ru.vsu.cs.roshchupkin_ya_a.view.MainFrame;
 
@@ -12,8 +13,6 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        SwingUtilities.invokeLater(MainFrame::new);
-
         GameService service = new GameService();
 
         List<Player> players = new LinkedList<>();
@@ -21,8 +20,11 @@ public class Main {
         players.add(new Player("Johan"));
         Game game = service.createGame(players);
 
-        service.processGame(game);
+        //service.processGame(game);
 
-        System.out.println(game);
+        //System.out.println(game);
+        MainFrame frame = new MainFrame();
+        frame.setModel(GameConverter.asString2DArray(game));
+        //SwingUtilities.invokeLater(MainFrame::new);
     }
 }

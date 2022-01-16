@@ -7,6 +7,7 @@ ru\vsu\cs\roshchupkin_ya_a\model\Player.class
 ru\vsu\cs\roshchupkin_ya_a\service\GameService.class
 ru\vsu\cs\roshchupkin_ya_a\service\placer\ITankPlacerService.class
 ru\vsu\cs\roshchupkin_ya_a\service\placer\WallPlacerService.class
+ru\vsu\cs\roshchupkin_ya_a\service\GameConverter.class
 ru\vsu\cs\roshchupkin_ya_a\view\MainFrame.class
 ru\vsu\cs\roshchupkin_ya_a\model\direction\DirectionSquare.class
 ru\vsu\cs\roshchupkin_ya_a\model\Game.class
