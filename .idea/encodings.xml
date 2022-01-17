@@ -6,7 +6,7 @@
     <file url="file://$PROJECT_DIR$/src/main/java/ru/vsu/cs/roshchupkin_ya_a/model/Player.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/ru/vsu/cs/roshchupkin_ya_a/model/gamefield/Cell.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/ru/vsu/cs/roshchupkin_ya_a/model/gamefield/Coordinate.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ru/vsu/cs/roshchupkin_ya_a/model/gamefield/GameField.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/vsu/cs/roshchupkin_ya_a/model/gamefield/Gamefield.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/ru/vsu/cs/roshchupkin_ya_a/service/placer/ITankPlacerService.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/ru/vsu/cs/roshchupkin_ya_a/service/placer/IWallPlacerService.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/ru/vsu/cs/roshchupkin_ya_a/service/placer/WallPlacerService.java" charset="UTF-8" />

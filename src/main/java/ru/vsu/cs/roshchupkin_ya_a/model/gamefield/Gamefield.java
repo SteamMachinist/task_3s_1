@@ -5,16 +5,16 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class GameField {
+public class Gamefield {
     private Map<Coordinate, Cell> coordinateCellMap;
     private Map<Cell, Coordinate> cellCoordinateMap;
 
-    public GameField() {
+    public Gamefield() {
         coordinateCellMap = new TreeMap<>();
         cellCoordinateMap = new HashMap<>();
     }
 
-    public GameField(Map<Coordinate, Cell> coordinateCellMap) {
+    public Gamefield(Map<Coordinate, Cell> coordinateCellMap) {
         this.coordinateCellMap = coordinateCellMap;
     }
 

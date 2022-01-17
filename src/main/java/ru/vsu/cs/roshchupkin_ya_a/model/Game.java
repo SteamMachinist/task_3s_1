@@ -2,7 +2,7 @@ package ru.vsu.cs.roshchupkin_ya_a.model;
 
 import ru.vsu.cs.roshchupkin_ya_a.model.gamefield.Cell;
 import ru.vsu.cs.roshchupkin_ya_a.model.gamefield.Coordinate;
-import ru.vsu.cs.roshchupkin_ya_a.model.gamefield.GameField;
+import ru.vsu.cs.roshchupkin_ya_a.model.gamefield.Gamefield;
 import ru.vsu.cs.roshchupkin_ya_a.model.gameobjects.*;
 
 import java.util.Map;
@@ -16,7 +16,7 @@ public class Game {
 
     private Queue<Player> playersQueue;
     private Map<Player, Queue<Tank>> playerTanksQueueMap;
-    private GameField gameField;
+    private Gamefield gameField;
     private Map<Cell, GameObject> cellToObjectMap;
     private Map<GameObject, Cell> objectToCellMap;
     private Map<Tank, Shell> tankToShellMap;
@@ -51,11 +51,11 @@ public class Game {
         this.playerTanksQueueMap = playerTanksQueueMap;
     }
 
-    public GameField getGameField() {
+    public Gamefield getGameField() {
         return gameField;
     }
 
-    public void setGameField(GameField gameField) {
+    public void setGameField(Gamefield gameField) {
         this.gameField = gameField;
     }
 

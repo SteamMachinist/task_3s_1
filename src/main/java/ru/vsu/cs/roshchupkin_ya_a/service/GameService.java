@@ -2,7 +2,7 @@ package ru.vsu.cs.roshchupkin_ya_a.service;
 
 import ru.vsu.cs.roshchupkin_ya_a.model.Game;
 import ru.vsu.cs.roshchupkin_ya_a.model.Player;
-import ru.vsu.cs.roshchupkin_ya_a.model.gamefield.GameField;
+import ru.vsu.cs.roshchupkin_ya_a.model.gamefield.Gamefield;
 import ru.vsu.cs.roshchupkin_ya_a.service.placer.IWallPlacerService;
 import ru.vsu.cs.roshchupkin_ya_a.service.placer.WallPlacerService;
 import ru.vsu.cs.roshchupkin_ya_a.utils.TextFileUtils;
@@ -34,11 +34,11 @@ public class GameService {
     }
 
     private void createGameField(Game game) {
-        GameFieldService gameFieldService = new GameFieldService();
+        GamefieldService gameFieldService = new GamefieldService();
         try {
             game.setGameField(gameFieldService.createGameField(TextFileUtils.read()));
         } catch (FileNotFoundException e) {
-            game.setGameField(new GameField());
+            game.setGameField(new Gamefield());
         }
     }
 
